@@ -34,12 +34,12 @@ jobs:
         password: ${{secrets.DOCKERHUB_TOKEN}}
     - name: build image spring
       run: |
-        docker build -t haythembensouissi/spring-app springboot/app
-        docker push haythembensouissi/spring-app
+        docker build -t ayamissaoui/spring-app springboot/app
+        docker push ayamissaoui/spring-app
     - name: build image angular
       run: |
-        docker build -t haythembensouissi/angular-app angular-app
-        docker push haythembensouissi/angular-app
+        docker build -t ayamissaoui/angular-app angular-app
+        docker push ayamissaoui/angular-app
    
     - name: Run docker compose
       run: |
